@@ -18,8 +18,6 @@ Bu proje, ESP-01 mikrodenetleyicisi ve bir OLED ekran kullanarak bir YouTube kan
   - `SCL` → **GPIO0** (ESP-01 için manuel olarak bağlanmalı)
   - `SDA` → **GPIO2** (ESP-01 için manuel olarak bağlanmalı)
 
-ESP-01'in SCL ve SDA bağlantıları doğrudan desteklenmediğinden, harici pull-up dirençleri (10kΩ) ile bu pinleri manuel olarak bağlamanız gerekir.
-
 ## Yazılım Gereksinimleri
 
 Aşağıdaki Arduino kütüphanelerinin kurulması gerekir:
