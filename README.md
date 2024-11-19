@@ -1,7 +1,3 @@
-AMS1117 modülü ve 4 pin Type-C soketini ekleyecek şekilde metni revize ettim:  
-
----
-
 # ESP-01 ile YouTube Kanal İstatistiklerini Gösterme  
 
 Bu proje, ESP-01 mikrodenetleyicisi ve bir OLED ekran kullanarak bir YouTube kanalının abone sayısını ve toplam görüntülenme sayısını gösterir. Veriler, YouTube Data API'si kullanılarak gerçek zamanlı olarak alınır.  
@@ -94,8 +90,4 @@ Aşağıdaki Arduino kütüphanelerinin kurulması gerekir:
 
 ## Görüntü Örneği  
 
-_OLED ekran üzerinde kanal logonuz ve istatistikler şu şekilde görünür:_  
-Logo  
-Takipçi Sayısı: 12345  
-Logo  
-Görüntüleme Sayısı: 67890  
+ 
