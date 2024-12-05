@@ -1,13 +1,13 @@
 # ESP-01 ile YouTube Kanal İstatistiklerini Gösterme  
 
-Bu proje, ESP-01 mikrodenetleyicisi ve bir OLED ekran kullanarak bir YouTube kanalının abone sayısını ve toplam görüntülenme sayısını gösterir. Veriler, YouTube Data API'si kullanılarak gerçek zamanlı olarak alınır.  
+Bu proje, ESP-01 mikrodenetleyicisi ve bir OLED ekran kullanarak bir YouTube kanalının abone sayısını, toplam izlenme ve video sayısını gösterir. Veriler, YouTube Data API'si kullanılarak gerçek zamanlı olarak alınır.  
 
 ## Özellikler  
 
 - ESP-01 üzerinden Wi-Fi bağlantısı  
 - YouTube Data API entegrasyonu  
 - OLED ekran üzerinde abone ve görüntülenme sayısının dönüşümlü olarak gösterilmesi  
-- Her 10 dakikada bir verilerin otomatik güncellenmesi  
+- Her 30 dakikada bir verilerin otomatik güncellenmesi  
 
 ## Donanım Gereksinimleri  
 
@@ -17,8 +17,8 @@ Bu proje, ESP-01 mikrodenetleyicisi ve bir OLED ekran kullanarak bir YouTube kan
 - **4 Pin Type-C Soketi** (Harici güç ve veri bağlantısı için kullanılabilir)  
 - **USB UART Dönüştürücü** (ESP-01'i programlamak için)  
 - I2C bağlantısı:  
-  - `SCL` → **GPIO0** (ESP-01 için manuel olarak bağlanmalı)  
-  - `SDA` → **GPIO2** (ESP-01 için manuel olarak bağlanmalı)  
+  - `SCL` → **GPIO2** (ESP-01 için manuel olarak bağlanmalı)  
+  - `SDA` → **GPIO0** (ESP-01 için manuel olarak bağlanmalı)  
 
 ### Ek Bağlantılar  
 - **AMS1117 Modülü**:  
@@ -45,8 +45,8 @@ Aşağıdaki Arduino kütüphanelerinin kurulması gerekir:
 1. **Donanım Bağlantıları**:  
    - ESP-01'inizi bir USB UART dönüştürücüye bağlayarak programlayın.  
    - OLED ekranın pinlerini ESP-01'in GPIO pinlerine bağlayın:  
-     - **SDA** → GPIO2  
-     - **SCL** → GPIO0  
+     - **SDA** → GPIO0  
+     - **SCL** → GPIO2  
    - AMS1117 modülü ile Type-C soketi arasındaki bağlantıları yapın:  
      - Type-C soketinin 5V çıkışı AMS1117'nin girişine bağlanır.  
      - AMS1117'nin 3.3V çıkışı ESP-01 ve OLED ekrana güç sağlar.  
@@ -85,9 +85,7 @@ Aşağıdaki Arduino kütüphanelerinin kurulması gerekir:
 ## Çalışma  
 
 - Cihaz bağlandıktan sonra, OLED ekranında kanal istatistikleri gösterilecektir.  
-- Ekran, her 5 saniyede bir abone ve görüntülenme sayısını dönüşümlü olarak gösterir.  
-- Her 10 dakikada bir veriler YouTube API'si üzerinden güncellenir.  
-
-## Görüntü Örneği  
+- Ekran, her 5 saniyede bir abone, izlenme ve video sayısını dönüşümlü olarak gösterir.  
+- Her 30 dakikada bir veriler YouTube API'si üzerinden güncellenir.    
 
  
