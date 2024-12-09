@@ -88,4 +88,5 @@ Aşağıdaki Arduino kütüphanelerinin kurulması gerekir:
 - Ekran, her 5 saniyede bir abone, izlenme ve video sayısını dönüşümlü olarak gösterir.  
 - Her 30 dakikada bir veriler YouTube API'si üzerinden güncellenir.    
 
+Youtube yapım videosu: https://youtu.be/wt5Z4rtUCYg
  
